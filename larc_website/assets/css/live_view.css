@@ -1,0 +1,14 @@
+.header{
+    max-width: 960px;
+    margin: 0 auto;
+    background: #000000;
+    font-size: 24px;
+    padding: 25px;
+}
+  
+.parallax{
+    background: "<%= Routes.static_path(@conn, "/images/test-image.jpg") %>" no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}  
