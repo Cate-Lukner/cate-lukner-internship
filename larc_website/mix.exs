@@ -35,6 +35,8 @@ defmodule LarcWebsite.MixProject do
     [
       {:phoenix, "~> 1.5.3"},
       {:phoenix_ecto, "~> 4.1"},
+      {:phoenix_pubsub, "~> 2.0"}, 
+      {:phoenix_swagger, "~> 0.8"}, 
       {:ecto_sql, "~> 3.4"},
       {:myxql, ">= 0.0.0"},
       {:phoenix_html, "~> 2.11"},
