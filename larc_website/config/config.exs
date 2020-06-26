@@ -26,6 +26,14 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+config :larc_website, LarcWebsite.Mailer,
+  adapter: Bamboo.SendGridAdapter,
+  api_key: "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"
+
+# Used for debugging. Uncomment to debug for Bamboo.
+# config :larc_website, LarcWebsite.Mailer,
+#   adapter: Bamboo.LocalAdapter
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"
