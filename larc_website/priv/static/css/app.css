@@ -1,0 +1,99 @@
+/* CSS for app.html.eex */
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+  scroll-behavior: smooth;
+}
+
+h1 {
+    text-align:center;
+}
+
+/* Container holding the image and the text */
+.company-header{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* The navbar container */
+.mainNav{
+    position: fixed;
+    top: 0px; 
+    overflow: hidden;
+}
+  
+  /* Navbar links */
+.mainNav a {
+    float: right;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* Links - change color on hover */
+.mainNav a:hover {
+    background-color: #0005;
+}
+
+.header{
+    max-width: 960px;
+    margin: 0 auto;
+    background: #000000;
+    font-size: 24px;
+    padding: 25px;
+}
+  
+.parallax{
+    background: url('https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 450px;  
+}  
+/* This file is for your main application css. */
+/* Alerts and form errors */
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+
+.alert-info {
+  color: #31708f;
+  background-color: #d9edf7;
+  border-color: #bce8f1; }
+
+.alert-warning {
+  color: #8a6d3b;
+  background-color: #fcf8e3;
+  border-color: #faebcc; }
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1; }
+
+.alert p {
+  margin-bottom: 0; }
+
+.alert:empty {
+  display: none; }
+
+
+/*# sourceMappingURL=app.css.map*/
