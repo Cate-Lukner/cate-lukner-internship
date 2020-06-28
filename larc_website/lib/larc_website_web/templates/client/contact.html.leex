@@ -1,0 +1,7 @@
+<h1>New Client</h1>
+
+<%= live_render @conn, LarcWebsiteWeb.ClientLive,
+  session: %{"action" => Routes.client_path(@conn, :contact), "csrf_token" => Plug.CSRFProtection.get_csrf_token()}
+%>
+
+<span><%= link "Back", to: Routes.page_path(@conn, :index) %></span>

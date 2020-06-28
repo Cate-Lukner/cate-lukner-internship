@@ -1,0 +1,26 @@
+<%= form_for @changeset, "#", [phx_change: :validate, phx_submit: :save], fn f -> %>
+
+  <%= label f, :first_name %>
+  <%= text_input f, :first_name %>
+  <%= error_tag f, :first_name %>
+
+  <%= label f, :last_name %>
+  <%= text_input f, :last_name, value: @form_data["last_name"] %>
+  <%= error_tag f, :last_name %>
+
+  <%= label f, :email_address %>
+  <%= text_input f, :email_address, value: @form_data["email_address"] %>
+  <%= error_tag f, :email_address %>
+
+  <%= label f, :subject %>
+  <%= text_input f, :subject, value: @form_data["subject"] %>
+  <%= error_tag f, :subject %>
+
+  <%= label f, :message %>
+  <%= text_input f, :message, value: @form_data["message"] %>
+  <%= error_tag f, :message %>
+
+  <div>
+    <%= submit "Send", phx_disable_with: "Air pigeons prepping for delivery..." %>
+  </div>
+<% end %>
