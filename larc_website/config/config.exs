@@ -16,7 +16,8 @@ config :larc_website, LarcWebsiteWeb.Endpoint,
   secret_key_base: "A7ZFRnxYZlVzCPIhLkfdsiFfunS3q7o/zLS3mNlniFLV0AuRiZgeqX3jKgxEqC3s",
   render_errors: [view: LarcWebsiteWeb.ErrorView, accepts: ~w(html json), layout: false],
   pubsub_server: LarcWebsite.PubSub,
-  live_view: [signing_salt: "vL8rGTlk"]
+  live_view: [signing_salt: "vL8rGTlk"],
+  static_url: [path: "/static"]
 
 # Configures Elixir's Logger
 config :logger, :console,

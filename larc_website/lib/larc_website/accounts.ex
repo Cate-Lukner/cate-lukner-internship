@@ -103,14 +103,4 @@ defmodule LarcWebsite.Accounts do
   def change_client(%Client{} = client, attrs \\ %{}) do
     Client.changeset(client, attrs)
   end
-
-  def validate_form_input(attrs) do
-    %Client{}
-    |> change(format_form_input(attrs))
-    |> Client.validate_form_input()
-  end
-
-  defp format_form_input(attrs) do
-    for {k,v} <- attrs, into: %{}, do: {String.to_existing_atom(k), v}
-  end
 end

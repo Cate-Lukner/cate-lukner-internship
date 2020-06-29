@@ -16,26 +16,18 @@ defmodule LarcWebsite.Accounts.Client do
 
   @doc false
   def changeset(client, attrs) do
-    # IO.inspect(client, label: "Client passed in for changeset: ")
+
+    email_regex = ~r"[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*"
+
     client
     |> cast(attrs, [:first_name, :last_name, :email_address, :subject, :message])
-    |> validate_required([:first_name, :last_name, :email_address, :subject, :message], message: "Cannot be blank.")
-    # This regex needs to change.
-    |> validate_format(:email_address, ~r/@/, message: "As far as we can tell, that is not a real email.")
-    |> validate_length(:first_name, min: 2, message: "Is your first name really less than two letters?")
-    |> validate_length(:last_name, min: 2, message: "Is your last name really less than two letters?")
-    |> validate_length(:subject, min: 2, message: "Tell us a little more than two letters about your message.")
-    |> validate_length(:message, min: 2, message: "That's really all you want to say? Give us more than two letters.")
+    |> validate_required([:first_name, :last_name, :email_address, :subject, :message])
+    |> validate_format(:email_address, email_regex)
+    |> validate_length(:first_name, min: 2)
+    |> validate_length(:last_name, min: 2)
+    |> validate_length(:subject, min: 2)
+    |> validate_length(:message, min: 2)
   end
-
-  def validate_form_input(params) do
-    # Validates the parameters of the client
-    # Future valdiation could be added here.
-
-    IO.inspect(params)
-
-  end
-
   def send_contact_email(socket, params) do
     # Specific to the handle event for "save"
     # Send the email and returns the socket that will be

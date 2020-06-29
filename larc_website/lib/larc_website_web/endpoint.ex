@@ -21,7 +21,7 @@ defmodule LarcWebsiteWeb.Endpoint do
   # You should set gzip to true if you are running phx.digest
   # when deploying your static files in production.
   plug Plug.Static,
-    at: "/",
+    at: "/static",
     from: :larc_website,
     gzip: false,
     only: ~w(css fonts images js favicon.ico robots.txt)

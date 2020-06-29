@@ -27,16 +27,7 @@ defmodule LarcWebsiteWeb.ClientLive do
       ClientView.render("form.html", assigns)
     end
 
-    def handle_event("validate", %{"client" => params} = args, socket) do
-      # On every change, calls IO.inspects the parameters
-      # Future validation could be added here.
-
-      IO.inspect(params, label: "VALIDATION: ")
-
-      {:noreply, socket}
-    end
-
-    def handle_event("save", %{"client" => params} = args, socket) do
+    def handle_event("save", %{"client" => params}, socket) do
 
       params
       |> Accounts.create_client()
