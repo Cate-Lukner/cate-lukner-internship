@@ -2,6 +2,50 @@
 @import "./live_view.css"; 
 @import "~bootstrap/scss/bootstrap";
 
+html, body{
+  height: 100%; 
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222; 
+  scroll-behavior: smooth;
+}
+/* Navigation Bar Styling */
+
+.navbar{
+  padding: .8rem;
+}
+
+.navbar-nav li{
+  padding-right: 20px; 
+}
+
+.nav-link{
+  font-size: 1.1em !important
+}
+
+/* Carousel Styling */
+
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 350px;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+}
+
+.carousel-caption h1{
+  text-transform: uppercase;
+  text-shadow: 1px 1px 10px #000; 
+}
+
+.carousel-caption p{
+  font-weight: 500; 
+  text-shadow: 1px 1px 10px #000; 
+}
+
 /* Alerts and form errors */
 .alert {
   padding: 15px;

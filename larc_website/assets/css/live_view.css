@@ -1,13 +1,5 @@
 /* CSS for app.html.eex */
 
-body,
-html {
-  margin: 0;
-  padding: 0;
-  background: #FFFFFF;
-  scroll-behavior: smooth;
-}
-
 h1 {
     text-align:center;
 }
@@ -26,29 +18,6 @@ h1 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-
-/* The navbar container */
-.mainNav{
-    position: fixed;
-    top: 0px; 
-    overflow: hidden;
-}
-  
-  /* Navbar links */
-.mainNav a {
-    float: right;
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-/* Links - change color on hover */
-.mainNav a:hover {
-    background-color: #0005;
 }
 
 .header{
