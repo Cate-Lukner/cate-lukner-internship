@@ -50,3 +50,22 @@
     <%= submit "Send", phx_disable_with: "Air pigeons prepping for delivery..." %>
   </div>
 <% end %>
+
+
+  <div class="form-group row">
+    <label class="col-form-label text-sm-right col-sm-2" for="product_name">Name</label>
+    <div class="col-sm-10">
+      <input class="form-control " id="product_name" name="product[name]" type="text">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-form-label text-sm-right col-sm-2" for="product_quantity">Quantity</label>
+    <div class="col-sm-10">
+      <input class="form-control " id="product_quantity" name="product[quantity]" type="number">
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10 ml-auto">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </div>

@@ -3690,6 +3690,17 @@
 
 /***/ }),
 
+/***/ "../node_modules/bootstrap.native/dist/bootstrap-native.esm.js":
+/*!*********************************************************************!*\
+  !*** ../node_modules/bootstrap.native/dist/bootstrap-native.esm.js ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/bootstrap.native-loader/index.js):\nError: Cannot find module 'bootstrap.native/lib/build-module.js'\nRequire stack:\n- /home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/bootstrap.native-loader/index.js\n- /home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/loader-runner/lib/loadLoader.js\n- /home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/loader-runner/lib/LoaderRunner.js\n- /home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/NormalModule.js\n- /home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/NormalModuleFactory.js\n- /home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/Compiler.js\n- /home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/webpack.js\n- /home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack-cli/bin/utils/validate-options.js\n- /home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack-cli/bin/utils/convert-argv.js\n- /home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack-cli/bin/cli.js\n- /home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/bin/webpack.js\n    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:957:15)\n    at Function.Module._load (internal/modules/cjs/loader.js:840:27)\n    at Module.require (internal/modules/cjs/loader.js:1019:19)\n    at require (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)\n    at Object.<anonymous> (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/bootstrap.native-loader/index.js:1:75)\n    at Module._compile (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/v8-compile-cache/v8-compile-cache.js:194:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1153:10)\n    at Module.load (internal/modules/cjs/loader.js:977:32)\n    at Function.Module._load (internal/modules/cjs/loader.js:877:14)\n    at Module.require (internal/modules/cjs/loader.js:1019:19)\n    at require (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/v8-compile-cache/v8-compile-cache.js:161:20)\n    at loadLoader (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/loader-runner/lib/loadLoader.js:18:17)\n    at iteratePitchingLoaders (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/loader-runner/lib/LoaderRunner.js:169:2)\n    at runLoaders (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/loader-runner/lib/LoaderRunner.js:365:2)\n    at NormalModule.doBuild (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/NormalModule.js:295:3)\n    at NormalModule.build (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/NormalModule.js:446:15)\n    at Compilation.buildModule (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/Compilation.js:739:10)\n    at /home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/Compilation.js:981:14\n    at NormalModuleFactory.create (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/NormalModuleFactory.js:376:26)\n    at /home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/Compilation.js:897:14\n    at Semaphore.acquire (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/util/Semaphore.js:29:4)\n    at asyncLib.forEach.err.stack (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/Compilation.js:895:15)\n    at arrayEach (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/neo-async/async.js:2405:9)\n    at Object.each (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/neo-async/async.js:2846:9)\n    at Compilation.addModuleDependencies (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/Compilation.js:873:12)\n    at Compilation.processModuleDependencies (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/Compilation.js:843:8)\n    at afterBuild (/home/catluk/Github/cate-lukner-internship/larc_website/assets/node_modules/webpack/lib/Compilation.js:954:15)\n    at processTicksAndRejections (internal/process/task_queues.js:79:11)");
+
+/***/ }),
+
 /***/ "../node_modules/nprogress/nprogress.js":
 /*!**********************************************!*\
   !*** ../node_modules/nprogress/nprogress.js ***!
@@ -4197,19 +4208,22 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/* NProgress, 
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/app.scss */ "./css/app.scss");
-/* harmony import */ var _css_app_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_app_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var phoenix_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! phoenix_html */ "../deps/phoenix_html/priv/static/phoenix_html.js");
-/* harmony import */ var phoenix_html__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(phoenix_html__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var phoenix__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! phoenix */ "../deps/phoenix/priv/static/phoenix.js");
-/* harmony import */ var phoenix__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(phoenix__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! nprogress */ "../node_modules/nprogress/nprogress.js");
-/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var phoenix_live_view__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! phoenix_live_view */ "../deps/phoenix_live_view/priv/static/phoenix_live_view.js");
-/* harmony import */ var phoenix_live_view__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(phoenix_live_view__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var bootstrap_native__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! bootstrap.native */ "../node_modules/bootstrap.native/dist/bootstrap-native.esm.js");
+/* harmony import */ var bootstrap_native__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(bootstrap_native__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_app_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/app.scss */ "./css/app.scss");
+/* harmony import */ var _css_app_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_app_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var phoenix_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! phoenix_html */ "../deps/phoenix_html/priv/static/phoenix_html.js");
+/* harmony import */ var phoenix_html__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(phoenix_html__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var phoenix__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! phoenix */ "../deps/phoenix/priv/static/phoenix.js");
+/* harmony import */ var phoenix__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(phoenix__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! nprogress */ "../node_modules/nprogress/nprogress.js");
+/* harmony import */ var nprogress__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(nprogress__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var phoenix_live_view__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! phoenix_live_view */ "../deps/phoenix_live_view/priv/static/phoenix_live_view.js");
+/* harmony import */ var phoenix_live_view__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(phoenix_live_view__WEBPACK_IMPORTED_MODULE_5__);
 // We need to import the CSS so that webpack will load it.
 // The MiniCssExtractPlugin is used to separate it out into
 // its own CSS file.
+
  // webpack automatically bundles all modules in your
 // entry points. Those entry points can be configured
 // in "webpack.config.js".
@@ -4225,17 +4239,21 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content");
-var liveSocket = new phoenix_live_view__WEBPACK_IMPORTED_MODULE_4___default.a("/live", phoenix__WEBPACK_IMPORTED_MODULE_2__["Socket"], {
+var liveSocket = new phoenix_live_view__WEBPACK_IMPORTED_MODULE_5___default.a("/live", phoenix__WEBPACK_IMPORTED_MODULE_3__["Socket"], {
   params: {
     _csrf_token: csrfToken
   }
 }); // Show progress bar on live navigation and form submits
 
 window.addEventListener("phx:page-loading-start", function (info) {
-  return nprogress__WEBPACK_IMPORTED_MODULE_3___default.a.start();
+  return nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.start();
 });
 window.addEventListener("phx:page-loading-stop", function (info) {
-  return nprogress__WEBPACK_IMPORTED_MODULE_3___default.a.done();
+  return nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.done();
+});
+window.addEventListener("phx:page-loading-stop", function (info) {
+  BSN.initCallback(document.body);
+  nprogress__WEBPACK_IMPORTED_MODULE_4___default.a.done();
 }); // connect if there are any LiveViews on the page
 
 liveSocket.connect(); // expose liveSocket on window for web console debug logs and latency simulation:

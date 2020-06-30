@@ -4,26 +4,68 @@
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>LarcWebsite · Phoenix Framework</title>
+    <title>Lowland Applied Research Company</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </head>
 <body>
+
+<!-- Image Slider -->
+<!-- Loading behind the parallax -->
+<!--
+<div id="slides" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+    <li data-target="#slides" data-slide-to="0" class="active"></li>
+    <li data-target="#slides" data-slide-to="1"></li>
+    <li data-target="#slides" data-slide-to="2"></li>
+    <li data-target="#slides" data-slide-to="3"></li>
+</ul>
+<div class="carousel-inner" name="home">
+  <div class="carousel-item">
+      <img src="/static/images/basin-model.jpg"> 
+      <div class="carousel-caption">
+          <h3>Friends of the Mississippi River Basin Model</h3>
+          <h5>In partnership with the Friends of the Mississippi River Basin Model, LARC was able to provide a set of geolocated maps for use by visitors of the Model.</h5>
+      </div>
+  </div>
+  <div class="carousel-item">
+      <img src="/static/images/product-chemistry.png"> 
+      <div class="carousel-caption">
+          <h3>Friends of the Mississippi River Basin Model</h3>
+          <h5>In partnership with the Friends of the Mississippi River Basin Model, LARC was able to provide a set of geolocated maps for use by visitors of the Model.</h5>
+      </div>
+  </div>
+  <div class="carousel-item">
+      <img src="/static/images/foster-civic-engagement.png"> 
+      <div class="carousel-caption">
+          <h3>Friends of the Mississippi River Basin Model</h3>
+          <h5>In partnership with the Friends of the Mississippi River Basin Model, LARC was able to provide a set of geolocated maps for use by visitors of the Model.</h5>
+      </div>
+  </div>
+  <div class="carousel-item">
+      <img src="/static/images/structure-activity.png"> 
+      <div class="carousel-caption">
+          <h3>Friends of the Mississippi River Basin Model</h3>
+          <h5>In partnership with the Friends of the Mississippi River Basin Model, LARC was able to provide a set of geolocated maps for use by visitors of the Model.</h5>
+      </div>
+  </div>
+</div>
+</div>
+-->
+
   <br>
   <p class="home">
       <a name="home"> 
-        <%= live_render(@conn, LarcWebsiteWeb.HomeLive) %> 
       </a>
   </p>
   <br>
   <p class="about">
       <a name="about">
-        <%= live_render(@conn, LarcWebsiteWeb.AboutLive) %>
       </a>
   </p>
   <p class="contact">
       <a name="contact">
-        <%= live_render(@conn, LarcWebsiteWeb.ContactLive) %>
       </a>
       <span><%= link "Contact Us", to: Routes.client_path(@conn, :contact) %></span>
   </p>

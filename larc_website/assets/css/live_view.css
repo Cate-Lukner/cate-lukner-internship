@@ -59,7 +59,7 @@ h1 {
     padding: 25px;
 }
   
-.parallax{
+#parallax{
     background: url('https://images.pexels.com/photos/547114/pexels-photo-547114.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
     background-size: cover;
     background-attachment: fixed;

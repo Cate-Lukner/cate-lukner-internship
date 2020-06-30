@@ -5,36 +5,56 @@
     <%= csrf_meta_tag() %>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>LarcWebsite · Phoenix Framework</title>
+    <title>Lowland Applied Research Company</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </head>
-  <body>
-    <a name="top">
-    <header>
-      <section class="company-header">
+<body>
+<header>
+        
+<!-- Navigation -->
 
-      <div id="company-name">
-        <div class="parallax">
+<nav class="navbar navbar-expand-md navbar-light bg-light stick-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="<%= Routes.page_path(@conn, :index) %>"><img src="/static/images/bird-logo.jpeg"></a> 
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"><%= link "Contact Us", to: Routes.client_path(@conn, :contact) %></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About </a>
+          </li>
+      </ul>
+    </div>
+</div>
+</nav>
 
-          <nav class="mainNav">
-            <a style="float:right"> <%= link "LARC", to: Routes.page_path(@conn, :index) %> </a> 
-            <a><%= link "Contact Us", to: Routes.client_path(@conn, :contact) %></a>
-            <a href="#about">About </a>
-            <a class="active" href="#top">Home </a>
-          </nav>
+<!-- Parallex Image -->
 
-          <h1 class="centered">Lowland Applied Research Company</h1>
-        </div>
-      </div>
+<figure>
+    <div id="parallax">
+      <h1 class="centered">Lowland Applied Research Company</h1>
+    </div>
+</figure>
 
-      </section>
-    </header>
-    </a>
+</header>
 
     <main role="main" class="container">
-      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <%= unless is_nil(get_flash(@conn, :info)) do %>
+        <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <% end %>
+      <%= unless is_nil(get_flash(@conn, :error)) do %>
+        <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <% end %>
       <%= @inner_content %>
     </main>
   </body>

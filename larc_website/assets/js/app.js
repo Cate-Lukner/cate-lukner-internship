@@ -1,6 +1,7 @@
 // We need to import the CSS so that webpack will load it.
 // The MiniCssExtractPlugin is used to separate it out into
 // its own CSS file.
+import "bootstrap.native"; 
 import "../css/app.scss"
 
 // webpack automatically bundles all modules in your
@@ -23,6 +24,10 @@ let liveSocket = new LiveSocket("/live", Socket, {params: {_csrf_token: csrfToke
 // Show progress bar on live navigation and form submits
 window.addEventListener("phx:page-loading-start", info => NProgress.start())
 window.addEventListener("phx:page-loading-stop", info => NProgress.done())
+window.addEventListener("phx:page-loading-stop", info => {
+    BSN.initCallback(document.body)
+    NProgress.done()
+  })
 
 // connect if there are any LiveViews on the page
 liveSocket.connect()
