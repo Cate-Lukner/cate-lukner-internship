@@ -49,7 +49,7 @@ module.exports = (env, options) => {
               only: ['collapse', 'dropdown', 'tooltip']
             }
           }
-        }
+        },
       ]
     },
     plugins: [

@@ -12,7 +12,7 @@
   </head>
 <body>
 <header>
-        
+
 <!-- Navigation -->
 
 <nav class="navbar navbar-expand-md navbar-light bg-light stick-top">
@@ -25,13 +25,19 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="<%= Routes.page_path(@conn, :index) %>">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="<%= Routes.client_path(@conn, :contact) %>">Contact Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#about">About </a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#myModal" data-toggle="modal" data-target="#myModal">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#meet-the-team">Meet the Team</a>
           </li>
       </ul>
     </div>
@@ -40,20 +46,43 @@
 
 <!-- Parallex Image -->
 
-<figure>
-    <div id="parallax">
-      <h1 class="centered">Lowland Applied Research Company</h1>
-    </div>
-</figure>
+<div class="paral header paral-main">
+  <h1>Lowland Applied Research Company</h1>
+</div>
+
+<!-- Contact Model -->
+<div class="modal fade" id="Mymodal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+                	&times;
+                </button> 
+				<h4 class="modal-title">
+            Contact Us
+        </h4>                                                             
+			</div> 
+			<div class="modal-body">
+          <%= live_render(@conn, LarcWebsiteWeb.ClientLive) %>
+			</div>   
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+                	Close
+                </button>
+			</div>
+		</div>                                                                       
+	</div>                                      
+</div>
+</div>
 
 </header>
 
     <main role="main">
       <%= unless is_nil(get_flash(@conn, :info)) do %>
-        <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+        <p class="alert alert-info fadeIn" role="alert"><%= get_flash(@conn, :info) %></p>
       <% end %>
       <%= unless is_nil(get_flash(@conn, :error)) do %>
-        <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+        <p class="alert alert-danger fadeIn" role="alert"><%= get_flash(@conn, :error) %></p>
       <% end %>
       <%= @inner_content %>
     </main>
