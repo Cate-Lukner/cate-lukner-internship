@@ -44,6 +44,40 @@
   <p class="lead animated fadeIn">Established in 2018, Lowland Applied Research Company (LARC) is dedicated to providing scientific, technical, and data-driven solutions to decision-support problems for a variety of organizations. With an eye to the future, a mind open to innovation, and a heart for the economies and ecologies of the Lower Mississippi River Valley region, LARC stands ready to help. </p>
 </div>
 
+<!-- Five Column Icon Section -->
+
+<div class="container-fluid padding">
+<br>
+<div class="container icon-header">
+  <h1> We bring a unique set of experience in a number of critical areas</h1>
+</div>
+
+<div class="row text-center padding">
+    <div class="col-md-2 col-xs-12 col-md-4">
+      <i class="fas fa-code"></i>
+      <h5>Analytical Chemistry</h5>
+    </div>
+    <div class="col-md-2 col-xs-12 col-md-4">
+      <i class="fas fa-bold"></i>
+      <h5>Cheminformatics and Computational Chemistry</h5>
+    </div>
+    <div class="col-md-2 col-xs-12 col-md-4">
+      <i class="fas fa-code"></i>
+      <h5>Application Design, Big Data, and Scalable Analytics</h5>
+    </div>
+    <div class="col-md-2 col-md-6">
+      <i class="fas fa-code"></i>
+      <h5>Cyber and Information Security</h5>
+    </div>
+    <div class="col-md-2 col-md-6">
+      <i class="fas fa-code"></i>
+      <h5>Decision Support Systems</h5>
+    </div>
+</div>
+</div>
+</div>
+
+
 <a name="about"> 
 
 <!-- First Parallax Section -->
@@ -85,34 +119,6 @@
 
 </a>
 
-<!-- Tow Column Section -->
-<div class="container-fluid padding">
-<div class="row padding">
-  <div class="col-lg-6 river">
-      <img src="static/images/river.jpg" class="image-fluid"
-      width="100%" height="100%">
-  </div>
-  <div class="col-lg-6">
-      <h2>We bring a unique set of experience in a number of critical areas:</h2>
-      <ul>
-      <li>Analytical Chemistry</li>
-      <li>Cheminformatics and Computational Chemistry</li>
-      <li>Application Design, Big Data, and Scalable Analytics</li>
-      <li>Cyber and Information Security</li>
-      <li>Decision Support Systems</li>
-      <ul>
-  </div>
-</div>
-
-</a>
-</div>
-
-<!-- .Launch Modal Button-->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Mymodal">
-  Contact Us
-</button>
-
-
 <!-- The Team -->
 
 <a name="meet-the-team">
@@ -130,7 +136,7 @@
 <!-- Team Member Cards -->
 <div class="container-fluid padding">
 <div class="row padding">
-  <div class="col-md-4">
+  <div class="col-md-6">
       <div class="card">
           <img class="card-img-top" src="static/images/dr-reid.jpg">
           <div class="card-body">
@@ -138,7 +144,7 @@
           </div>
       </div>
   </div>
-  <div class="col-md-4">
+  <div class="col-md-6">
       <div class="card">
           <img class="card-img-top" src="static/images/dr-o-gwynn.jpg">
           <div class="card-body">
@@ -150,6 +156,25 @@
 </div>
 
 </a>
+
+<!-- .Launch Modal Button-->
+<div class="container">
+<h3>Would you like to learn more?</h3>
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Mymodal">
+  Contact Us
+</button>
+</div>
+
+<footer>
+  <br>
+  <br>
+  <div class="container text-center">
+    Here is the future footer. 
+    LARC &copy
+  </div>
+  <br>
+  <br>
+</footer>
 
 </body> 
 </html>
