@@ -9,6 +9,8 @@ html, body{
   scroll-behavior: smooth;
 }
 
+
+
 .container-fluid > .row{
   margin-top: 30px; 
   margin-right: 10px;
@@ -65,52 +67,7 @@ header .container {
   z-index: 2;
 }
 
-/* Parallax Styling */
-.paral {
-  max-height: 500px;  
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: 50% 50%;
-  opacity: 0.8;
-}
 
-/* Paragraph for Parallax Section */ 
-.paral p {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 24px;
-  color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  line-height: 30px;
-  text-shadow: 2px 2px 10px #000;
-}
-  
-/* Headings for Parallax Section */ 
-
-.paral h2 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 60px;
-  text-align: center;
-  padding-top: 60px;
-  line-height: 60px;
-  text-shadow: 2px 2px 10px #000;
-}
-
-/* Image for Parallax Section */ 
-
-.paralsec0{
-  background-image: url(/static/images/ms-river-4.jpg);
-}
-
-.paralsec1 {
-  background-image: url(/static/images/foster-civic-engagement.png); 
-}
-.paralsec2 {
-  background-image: url(/static/images/plasma.jpg);
-}
-
-.paralsec3 {
-  background-image: url(/static/images/protein-molecule.jpg);
-}
 
 /* Remove Bottom Margin from Jumbotron */
 .jumbotron{
@@ -136,8 +93,91 @@ header .container {
   margin-top: 1%;
 }
 
+/* Carousel Styling */
+
+#aboutCarousel {
+  margin-bottom: 0;
+}
+
+.carousel-item img{
+  width: 100%;
+  height: 450px; 
+  overflow: hidden; 
+  object-fit: cover;
+  filter: grayscale(30%) blur(6px); 
+  -webkit-filter: grayscale(30%) blur(6px); 
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+
+/* Paragraph for Carousel Section */ 
+.carousel-caption p {
+  color: white; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-shadow: 2px 2px 10px #000;
+}
+
+/* Headings for Carousel Section */ 
+
+.carousel-caption h1{
+  color: #fff; 
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align: center;
+  padding-top: 60px;
+  line-height: 60px;
+  text-shadow: 2px 2px 10px #000;
+}
+
 /* Team Cards Styling */
 
+/* Contact Us Parallax Styling */
+.paral {
+  background-attachment: fixed;
+  background-size: cover;
+  object-fit: cover;
+  background-position: 50% 50%;
+}
+
+.paral .container{
+  margin: 3%; 
+}
+
+.paral h1{
+  color: #fff;
+  text-shadow: 3px 3px 15px #000;
+  margin-bottom: 0px;
+}
+
+.paralsec0{
+  background-image: url(/static/images/ms-river-2.jpg);
+}
+
+.paral button{
+  font-size: 24px; 
+  font-weight: lighter;
+  background-color: Transparent;
+  border: none
+}
+
+.paral button:hover{
+  color: black; 
+  background: white;
+  opacity: 0.8;
+}
 
 /* Alerts and form errors */
 .alert {
