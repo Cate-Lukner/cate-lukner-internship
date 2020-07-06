@@ -14,7 +14,7 @@
   </head>
 <body>
 
-<div class="jumbotron">
+<div class="jumbotron bg-dark text-white">
   <h1 class="animated fadeIn">Who we are</h1>
   <hr>
   <p class="lead animated fadeIn">Established in 2018, Lowland Applied Research Company (LARC) is dedicated to providing scientific, technical, and data-driven solutions to decision-support problems for a variety of organizations. With an eye to the future, a mind open to innovation, and a heart for the economies and ecologies of the Lower Mississippi River Valley region, LARC stands ready to help. </p>
@@ -22,8 +22,7 @@
 
 <!-- Five Column Icon Section -->
 
-
-<div class="container-fluid padding">
+<div class="container-fluid padding bg-transparent text-white">
 <div class="icon-header">
   <h1> We bring a unique set of experience in a number of critical areas</h1>
 </div>
@@ -57,9 +56,9 @@
 
 <br>
 
-<a name="about"> 
+<a name="projects"> 
 
-<!-- Image Slider -->
+<!-- Projects Image Slider -->
 <div id="aboutCarousel" class="carousel slide carousel-fade" data-ride="carousel">
   <ol class="carousel-indicators">
     <li data-target="#aboutCarousel" data-slide-to="0" class="active"></li>
@@ -117,7 +116,7 @@
 <div class="container-fluid padding">
 <div class="row welcome text-center">
     <div class="col-12">
-      <h1 class="display-4">Meet the Team</h1>
+      <h1>Meet the Team</h1>
     </div>
     <hr>
 </div>
