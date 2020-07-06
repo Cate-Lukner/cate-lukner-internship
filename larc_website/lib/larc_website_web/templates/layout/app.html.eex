@@ -6,24 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Lowland Applied Research Company</title>
-    <script>
-    $(function () {
-        $(window).on('scroll', function () {
-            if ( $(window).scrollTop() > 2 ) {
-                $('.navbar').addClass('active');
-            } else {
-                $('.navbar').removeClass('active');
-            }
-        });
-    });
-    </script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
     <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
   </head>
-<body>
-
-<header class="header">
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg fixed-top py-3">
@@ -49,6 +35,7 @@
 </div>
 </nav>
 
+<header class="header">
 
 <!-- Contact Model -->
 <div class="modal fade" id="Mymodal">
@@ -75,11 +62,9 @@
 </div>
 </div>
 
-
-
 <div class="overlay"></div>
 <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-  <source src="/static/images/ms-river.mp4#t=10" type="video/mp4">
+  <source src="/static/images/ms-river.mp4#t=15" type="video/mp4">
 </video>
 <div class="container h-100">
   <div class="d-flex h-100 text-center align-items-center">
@@ -91,15 +76,22 @@
 
 </header>
 
+<body>
+  <main role="main">
+    <%= unless is_nil(get_flash(@conn, :info)) do %>
+      <p class="alert alert-info fadeIn" role="alert"><%= get_flash(@conn, :info) %></p>
+    <% end %>
+    <%= unless is_nil(get_flash(@conn, :error)) do %>
+      <p class="alert alert-danger fadeIn" role="alert"><%= get_flash(@conn, :error) %></p>
+    <% end %>
+    <%= @inner_content %>
+  </main>
+</body>
 
-    <main role="main">
-      <%= unless is_nil(get_flash(@conn, :info)) do %>
-        <p class="alert alert-info fadeIn" role="alert"><%= get_flash(@conn, :info) %></p>
-      <% end %>
-      <%= unless is_nil(get_flash(@conn, :error)) do %>
-        <p class="alert alert-danger fadeIn" role="alert"><%= get_flash(@conn, :error) %></p>
-      <% end %>
-      <%= @inner_content %>
-    </main>
-  </body>
+<footer>
+  <div class="container text-center">
+    &copy 2020 Lowland Research Company. All Rights Reserved.  
+  </div>
+</footer>
+
 </html>
