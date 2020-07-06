@@ -1,0 +1,20 @@
+/* Icon Section Styling */ 
+
+.icon-header{
+  text-align: center;
+  margin: 4%;
+}
+
+/* This causes the icons to be not centered when they are in a single column*/
+/* There is most likely a better solution for evenly spaced columns*/ 
+
+.col-lg-2 {
+  margin-left: 2.75%; 
+  margin-bottom: 3%;
+}
+
+.col-lg-2 h5{
+  margin-top: 1%;
+  font-weight: bold;
+  line-height: 30px;
+}
