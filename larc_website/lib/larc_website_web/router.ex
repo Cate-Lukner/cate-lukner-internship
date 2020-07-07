@@ -24,9 +24,8 @@ defmodule LarcWebsiteWeb.Router do
       resources "/clients", ClientController
     end
 
-    get "/contact", ClientController, :contact
-
     get "/", PageController, :index
+    post "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.

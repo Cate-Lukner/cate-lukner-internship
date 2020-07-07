@@ -3,7 +3,6 @@
     <div class="form-group">
     <%= label f, :first_name, class: "control-label" %>
     <%= text_input f, :first_name,
-        placeholder: "George",
         class: "form-control",
         value: @form_data["first_name"],
         minlength: "2",
@@ -16,7 +15,6 @@
   <div class="form-group">
     <%= label f, :last_name, class: "control-label" %>
     <%= text_input f, :last_name,
-        placeholder: "Washington",
         class: "form-control",
         value: @form_data["last_name"],
         type: "text",
@@ -30,7 +28,6 @@
   <div class="form-group">
     <%= label f, :email_address, class: "control-label" %>
     <%= email_input f, :email_address,
-        placeholder: "georgie123@founders.org",
         class: "form-control",
         value: @form_data["email_address"],
         minlength: "2",
@@ -43,7 +40,6 @@
   <div class="form-group">
     <%= label f, :subject, class: "control-label" %>
     <%= text_input f, :subject,
-        placeholder: "What are you contacting about?",
         class: "form-control",
         value: @form_data["subject"],
         minlength: "2",
@@ -55,7 +51,6 @@
 
   <%= label f, :message, class: "control-label" %>
   <%= textarea f, :message,
-      placeholder: "What do you want us to know?",
       class: "form-control",
       value: @form_data["message"],
       minlength: "2",

@@ -9,9 +9,9 @@ defmodule LarcWebsiteWeb.ClientController do
     render(conn, "index.html", clients: clients)
   end
 
-  def contact(conn, _params) do
+  def new(conn, _params) do
     changeset = Accounts.change_client(%Client{})
-    render(conn, "contact.html", changeset: changeset)
+    render(conn, "new.html", changeset: changeset)
   end
 
   def show(conn, %{"id" => id}) do

@@ -29,10 +29,6 @@ defmodule LarcWebsite.Accounts.Client do
     |> validate_length(:message, min: 2)
   end
   def send_contact_email(socket, params) do
-    # Specific to the handle event for "save"
-    # Send the email and returns the socket that will be
-    # passed to put_flash and the redirect
-
      Email.contact_email(params)
      |> Mailer.deliver_later()
 

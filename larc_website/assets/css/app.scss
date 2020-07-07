@@ -9,6 +9,7 @@
 @import "./parallax.css";
 @import "./carousel.css"; 
 @import "./the-team.css"; 
+@import "./contact-modal.css"; 
 
 /* Shared CSS for All Sections */ 
 
@@ -81,29 +82,31 @@ hr{
   margin-bottom: 0;
 }
 
-.modal-header, .modal-content, .modal-body{
-  background-color: transparent;  
-  color: white; 
-}
-
-.modal-body button{
-  background-color: transparent;
-  border: transparent;
-}
-
-.modal-body button:hover{
-  background-color: transparent;
-  border: 3px solid #fff;
-  opacity: 0.9;
-}
-
-
 footer{
   border-top: 3px solid #708090; 
   padding: 40px; 
-  background-color: #292b2c;
+  background-color: #343a40;
   color: white;
 }
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation-name: fade-out;
+}
+
+.animated {
+  animation-duration: 7s;
+  animation-fill-mode: both;
+}  
 
 /* Alerts and form errors */
 .alert {

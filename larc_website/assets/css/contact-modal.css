@@ -1,0 +1,27 @@
+.modal-header, .modal-title, 
+.modal-content, .modal-body{
+  background-color: transparent;  
+  color: #343a40; 
+}
+
+.modal-body{
+  font-size: large;
+}
+
+.modal-body button{
+  background-color: #343a40;
+  border: 3px solid #343a40; 
+  color: #fff; 
+  opacity: 0.9;
+  font-size: large;
+}
+
+.modal-body button:hover{
+  background-color: #343a40;
+  border: 3px solid #343a40; 
+  opacity: 0.5; 
+}
+
+.modal-body button:focus{
+  background-color: red;
+}
