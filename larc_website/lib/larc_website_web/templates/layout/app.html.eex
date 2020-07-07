@@ -38,25 +38,22 @@
 <header class="header">
 
 <!-- Contact Model -->
-<div class="modal fade" id="Mymodal">
-	<div class="modal-dialog modal-lg">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal">
-                	&times;
-                </button> 
-				<h4 class="modal-title">
+<div class="modal fade" id="Mymodal" tabindex="-1">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content bg-dark">
+			<div class="modal-header text-left">
+        <h1 class="modal-title w-100">
             Contact Us
-        </h4>                                                             
+        </h1> 
+        <div class="text-left">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+          </button> 
+        </div>
 			</div> 
 			<div class="modal-body">
           <%= live_render(@conn, LarcWebsiteWeb.ClientLive) %>
 			</div>   
-			<div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">
-                	Close
-                </button>
-			</div>
 		</div>                                                                       
 	</div>                                      
 </div>

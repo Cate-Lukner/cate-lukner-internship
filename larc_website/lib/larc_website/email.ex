@@ -10,7 +10,7 @@ defmodule LarcWebsite.Email do
     new_email()
     |> from("catluk32@gmail.com") # Replace this with LARC email
     |> to("catluk32@gmail.com") # Replace this with LARC email
-    |> subject("New Contact Message: #{Map.get(params, "subject")}")
+    |> subject("Contact Submission: #{Map.get(params, "subject")}")
     |> put_header("Reply-To", contact_email_address)
     |> html_body("
     <p>#{first_name} #{last_name} wrote,</p>

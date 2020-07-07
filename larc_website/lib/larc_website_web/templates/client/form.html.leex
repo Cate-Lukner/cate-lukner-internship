@@ -1,10 +1,10 @@
-<form>
-<div class="form-group">
 <%= form_for @changeset, "#", [phx_submit: :save], fn f -> %>
 
-  <div class="form-group">
-    <%= label f, :first_name %>
+    <div class="form-group">
+    <%= label f, :first_name, class: "control-label" %>
     <%= text_input f, :first_name,
+        placeholder: "George",
+        class: "form-control",
         value: @form_data["first_name"],
         minlength: "2",
         required: "required",
@@ -14,8 +14,10 @@
   </div>
 
   <div class="form-group">
-    <%= label f, :last_name %>
+    <%= label f, :last_name, class: "control-label" %>
     <%= text_input f, :last_name,
+        placeholder: "Washington",
+        class: "form-control",
         value: @form_data["last_name"],
         type: "text",
         minlength: "2",
@@ -26,8 +28,10 @@
   </div>
 
   <div class="form-group">
-    <%= label f, :email_address %>
+    <%= label f, :email_address, class: "control-label" %>
     <%= email_input f, :email_address,
+        placeholder: "georgie123@founders.org",
+        class: "form-control",
         value: @form_data["email_address"],
         minlength: "2",
         required: "required",
@@ -37,8 +41,10 @@
   </div>
 
   <div class="form-group">
-    <%= label f, :subject %>
+    <%= label f, :subject, class: "control-label" %>
     <%= text_input f, :subject,
+        placeholder: "What are you contacting about?",
+        class: "form-control",
         value: @form_data["subject"],
         minlength: "2",
         required: "required",
@@ -47,8 +53,10 @@
     <%= error_tag f, :subject %>
   </div>
 
-  <%= label f, :message %>
-  <%= text_input f, :message,
+  <%= label f, :message, class: "control-label" %>
+  <%= textarea f, :message,
+      placeholder: "What do you want us to know?",
+      class: "form-control",
       value: @form_data["message"],
       minlength: "2",
       required: "required",
@@ -56,9 +64,9 @@
   %>
   <%= error_tag f, :message %>
 
+  <br>
+
   <div>
-    <%= submit "Send", phx_disable_with: "Air pigeons prepping for delivery..." %>
+    <%= submit "Send", phx_disable_with: "Air pigeons prepping for delivery...", class: "btn btn-primary" %>
   </div>
 <% end %>
-</div>
-</form>

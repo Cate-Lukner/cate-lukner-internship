@@ -7466,6 +7466,19 @@ hr {
 .jumbotron {
   margin-bottom: 0; }
 
+.modal-header, .modal-content, .modal-body {
+  background-color: transparent;
+  color: white; }
+
+.modal-body button {
+  background-color: transparent;
+  border: transparent; }
+
+.modal-body button:hover {
+  background-color: transparent;
+  border: 3px solid #fff;
+  opacity: 0.9; }
+
 footer {
   border-top: 3px solid #708090;
   padding: 40px;

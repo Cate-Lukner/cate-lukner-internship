@@ -28,7 +28,6 @@ defmodule LarcWebsiteWeb.ClientLive do
     end
 
     def handle_event("save", %{"client" => params}, socket) do
-
       params
       |> Accounts.create_client()
       |> case do
