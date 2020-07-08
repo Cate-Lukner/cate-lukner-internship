@@ -9,15 +9,15 @@
   height: 450px; 
   overflow: hidden; 
   object-fit: cover;
-  filter: grayscale(60%) blur(6px); 
-  -webkit-filter: grayscale(60%) blur(6px); 
+  filter: brightness(65%) blur(2px); 
+  -webkit-filter: brightness(65%) blur(2px); 
 }
 
 .carousel-caption {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-8%, -50%);
+  transform: translate(-6%, -50%);
   z-index: 2;
   width: 80%;
   padding: 20px;
@@ -28,7 +28,8 @@
 .carousel-caption p {
   color: white; 
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 20px;
+  font-weight: 200;
+  font-size: 24px;
   line-height: 30px;
   text-shadow: 2px 2px 10px #000;
 }
@@ -37,8 +38,7 @@
 
 .carousel-caption h1{
   color: #fff; 
-  font-weight: 300;
-  text-transform: uppercase;
+  font-weight: 200;
   font-size: 50px;
   text-align: center;
   padding-top: 60px;
