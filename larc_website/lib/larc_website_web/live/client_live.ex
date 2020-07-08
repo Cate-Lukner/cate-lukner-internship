@@ -1,8 +1,8 @@
-defmodule LarcWebsiteWeb.ClientLive do
+defmodule LarcWebsiteWeb.ContactFormLive do
     use Phoenix.LiveView
 
     alias LarcWebsiteWeb.Router.Helpers, as: Routes
-    alias LarcWebsiteWeb.ClientView
+    alias LarcWebsiteWeb.ContactView
     alias LarcWebsite.Accounts
     alias LarcWebsite.Accounts.Client
 
@@ -24,7 +24,7 @@ defmodule LarcWebsiteWeb.ClientLive do
     end
 
     def render(assigns) do
-      ClientView.render("form.html", assigns)
+      ContactView.render("contact-form.html", assigns)
     end
 
     def handle_event("save", %{"client" => params}, socket) do

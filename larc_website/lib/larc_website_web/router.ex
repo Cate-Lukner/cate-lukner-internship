@@ -1,10 +1,6 @@
 defmodule LarcWebsiteWeb.Router do
   use LarcWebsiteWeb, :router
 
-  if Mix.env == :dev do
-    forward "/sent", Bamboo.SentEmailViewerPlug
-  end
-
   pipeline :browser do
     plug :accepts, ["html"]
     plug :fetch_session
@@ -20,12 +16,7 @@ defmodule LarcWebsiteWeb.Router do
   scope "/", LarcWebsiteWeb do
     pipe_through :browser
 
-    if Mix.env == :dev do
-      resources "/clients", ClientController
-    end
-
     get "/", PageController, :index
-    post "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.

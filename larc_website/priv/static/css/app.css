@@ -73,7 +73,6 @@
 }
 
 
-/* Empty for now */
 /* Navigation Bar Styling */
 
 .navbar {
@@ -137,7 +136,22 @@
   }
 }
 
+
 /* Icon Section Styling */ 
+
+section {
+  opacity: 0;
+  transition: opacity 1s;
+  transform: translate(0, 20px);
+  transition: all 2s;
+  color: #fff; 
+}
+  
+section.visible { 
+  opacity: 1;
+  transform: (0,0);
+  color: #fff; 
+}
 
 .icon-header{
   text-align: center;
@@ -250,7 +264,6 @@
   line-height: 60px;
   text-shadow: 2px 2px 10px #000;
 }
-
 /* Team Cards Styling */
 .team-header{
   border: 3px solid #fff;
@@ -283,6 +296,70 @@
   background-color: red;
 }
 
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation-name: fade-out;
+}
+
+.animated {
+  animation-duration: 7s;
+  animation-fill-mode: both;
+}  
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation-name: fade-in;
+}
+
+.animated {
+  animation-duration: 7s;
+  animation-fill-mode: both;
+}  
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     -webkit-transform: translateX(-20px);
+  }
+  100% {
+     opacity: 1;
+     -webkit-transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-20px);
+  }
+  100% {
+     opacity: 1;
+     transform: translateX(0);
+  }
+}
+
+.fadeInLeft {
+-webkit-animation-name: fadeInLeft;
+animation-name: fadeInLeft;
+} 
 /* This file is for your main application css. */
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
@@ -7514,19 +7591,6 @@ footer {
   padding: 40px;
   background-color: #343a40;
   color: white; }
-
-@keyframes fade-out {
-  from {
-    opacity: 1; }
-  to {
-    opacity: 0; } }
-
-.fade-out {
-  animation-name: fade-out; }
-
-.animated {
-  animation-duration: 7s;
-  animation-fill-mode: both; }
 
 /* Alerts and form errors */
 .alert {

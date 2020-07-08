@@ -3,13 +3,13 @@
 @import "../node_modules/nprogress/nprogress.css"; 
 
 /* Imports for Each Seperate Component */
-@import "./live_view.css"; 
 @import "./nav-bar.css"; 
 @import "./about-icons.css"; 
 @import "./parallax.css";
 @import "./carousel.css"; 
 @import "./the-team.css"; 
 @import "./contact-modal.css"; 
+@import "./animations.css"; 
 
 /* Shared CSS for All Sections */ 
 
@@ -88,25 +88,6 @@ footer{
   background-color: #343a40;
   color: white;
 }
-
-@keyframes fade-out {
-  from {
-    opacity: 1;
-  }
-
-  to {
-    opacity: 0;
-  }
-}
-
-.fade-out {
-  animation-name: fade-out;
-}
-
-.animated {
-  animation-duration: 7s;
-  animation-fill-mode: both;
-}  
 
 /* Alerts and form errors */
 .alert {
