@@ -18,7 +18,20 @@ html, body{
   width: 100%;
   color: #222; 
   scroll-behavior: smooth;
-  background-color:	#708090;
+  background-color:	#fff;
+  // Text Color: #708090
+}
+
+.full-height{
+  padding-top: 3px;
+  height: 100%; 
+}
+
+section{
+  width: auto;
+  margin: 0px; 
+  padding: 0em;
+  overflow: hidden;
 }
 
 .container-fluid > .row{
@@ -37,26 +50,27 @@ h1, h2{
 header {
   position: relative;
   background-color: #838B8B;
-  height: 55vh;
-  min-height: 25rem;
   width: 100%;
+  height: 100%;  
   overflow: hidden;
 }
 
 header video {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0%;
+  left: 0.01%; 
   min-width: 100%;
   min-height: 100%;
   width: auto;
   height: auto;
   z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  opacity: 0.8;
+  filter: brightness(40%); 
+  -webkit-filter: brightness(40%); 
+}
+
+header .center{
+  margin: 0 auto; 
+  display: block; 
 }
 
 header .container {
@@ -80,12 +94,13 @@ hr{
 /* Remove Bottom Margin from Jumbotron */
 .jumbotron{
   margin-bottom: 0;
+  background-color: #233142;
 }
 
 footer{
   border-top: 3px solid #708090; 
   padding: 40px; 
-  background-color: #343a40;
+  background-color: #708090;
   color: white;
 }
 

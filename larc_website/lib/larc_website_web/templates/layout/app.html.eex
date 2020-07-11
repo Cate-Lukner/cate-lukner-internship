@@ -25,28 +25,36 @@
     </script>
   </head>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg fixed-top py-3">
-<div class="container-fluid">
-    <a class="navbar-brand" href="<%= Routes.page_path(@conn, :index) %>"><img src="/static/images/larc-bird.png" height="40"></a> 
-    <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="<%= Routes.page_path(@conn, :index) %>">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">Current Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#meet-the-team">Meet the Team</a>
-          </li>
-          <li class="nav-item">
-          <a id="navbar-modal-button" class="nav-link" href="#" data-toggle="modal" data-target="#Mymodal">Contact Us</a>
-          </li>
-      </ul>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top py-3">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="navbar-brand" href="<%= Routes.page_path(@conn, :index) %>">Lowland Applied Research Co.</a>
+            </li>
+        </ul>
     </div>
-</div>
+    <div class="mx-auto order-0">
+        <a class="navbar-brand mx-auto" href="<%= Routes.page_path(@conn, :index) %>"><img src="/static/images/larc-bird.png" height="40"></a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects">Collaborations</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#meet-the-team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a id="navbar-modal-button" class="nav-link" href="#" data-toggle="modal" data-target="#Mymodal">Contact Us</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
 <header class="header">
@@ -73,16 +81,18 @@
 </div>
 </div>
 
-<div class="overlay"></div>
-<video class="animated fade-in" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+<div class="full-height">
+<video id="video-header" class="center animated fade-in" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
   <source src="/static/images/ms-river.mp4#t=15" type="video/mp4">
 </video>
 <div class="container h-100">
   <div class="d-flex h-100 text-center align-items-center">
     <div class="w-100 text-white animated fade-in">
-      <h1 class="display-3">Lowland Applied Research Company</h1>
+      <h1 class="display-3">Dedicated to Providing Scientific, Technical, and Data-driven Solutions to Decision-support Problems</h1>
+      <p>With an eye to the future, a mind open to innovation, and a heart for the economies and ecologies of the Lower Mississippi River Valley region, LARC stands ready to help.</p>
     </div>
   </div>
+</div>
 </div>
 
 </header>
