@@ -88,8 +88,8 @@
 <div class="container h-100">
   <div class="d-flex h-100 text-center align-items-center">
     <div class="w-100 text-white animated fade-in">
-      <h1 class="display-3">Dedicated to Providing Scientific, Technical, and Data-driven Solutions to Decision-support Problems</h1>
-      <p>With an eye to the future, a mind open to innovation, and a heart for the economies and ecologies of the Lower Mississippi River Valley region, LARC stands ready to help.</p>
+      <h1 class="video-header">Dedicated to Providing Scientific, Technical, and Data-driven Solutions to Decision-support Problems</h1>
+      <p class="video-info">With an eye to the future, a mind open to innovation, and a heart for the economies and ecologies of the Lower Mississippi River Valley region, LARC stands ready to help.</p>
     </div>
   </div>
 </div>
