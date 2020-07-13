@@ -31,11 +31,11 @@
     </script>
   </head>
 
-<!-- Home Info -->
-<%= live_render(@conn, LarcWebsiteWeb.HomeLive) %>
-
 <!-- Current Projects -->
 <%= live_render(@conn, LarcWebsiteWeb.ProjectsLive) %>
+
+<!-- Home Info -->
+<%= live_render(@conn, LarcWebsiteWeb.HomeLive) %>
 
 <!-- The Team -->
 <%= live_render(@conn, LarcWebsiteWeb.TeamLive) %>
