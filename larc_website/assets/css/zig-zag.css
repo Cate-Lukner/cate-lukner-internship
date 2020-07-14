@@ -1,0 +1,44 @@
+/* Clear floats */
+.row:after {
+content: "";
+display: table;
+clear: both
+}
+
+/* 2/3 column */
+.column-text{
+float: left;
+width: 60%;
+padding: 20px;
+}
+
+/* 1/3 column */
+.column-icon{
+float: left;
+width: 40%;
+padding: 20px;
+}
+
+.column-icon img,
+.column-text img{
+    display: block;
+    max-width: 100%; 
+}
+
+.zig-zag .row{
+    margin: 3%; 
+}
+
+.zig-zag img{
+    max-height: 100px;
+    max-width: 80px;
+}
+
+/* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
+@media screen and (max-width: 1000px) {
+.column-text,
+.column-icon{
+    width: 100%;
+    text-align: center;
+}
+}
