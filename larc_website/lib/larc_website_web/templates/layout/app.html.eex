@@ -42,10 +42,10 @@
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#projects">Work</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#projects">Collaborations</a>
+                <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#meet-the-team">Team</a>
@@ -81,7 +81,7 @@
 </div>
 </div>
 
-<div class="full-height">
+<div class="full-height video">
 <video id="video-header" class="center animated fade-in" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
   <source src="/static/images/ms-river.mp4#t=15" type="video/mp4">
 </video>
@@ -90,6 +90,9 @@
     <div class="w-100 text-white animated fade-in">
       <h1 class="video-header">Dedicated to Providing Scientific, Technical, and Data-driven Solutions to Decision-support Problems</h1>
       <p class="video-info">With an eye to the future, a mind open to innovation, and a heart for the economies and ecologies of the Lower Mississippi River Valley region, LARC stands ready to help.</p>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Mymodal">
+        Contact Us
+      </button>
     </div>
   </div>
 </div>
@@ -100,10 +103,10 @@
 <body>
   <main role="main">
     <%= unless is_nil(get_flash(@conn, :info)) do %>
-      <p class="alert alert-info animated fade-out" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
     <% end %>
     <%= unless is_nil(get_flash(@conn, :error)) do %>
-      <p class="alert alert-danger animated fade-out" role="alert"><%= get_flash(@conn, :error) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
     <% end %>
     <%= @inner_content %>
   </main>

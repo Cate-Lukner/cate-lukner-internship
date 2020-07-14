@@ -20,26 +20,3 @@
   background-image: url(/static/images/ms-river-2.jpg);
 }
 
-.paral button{
-  font-size: 24px; 
-  font-weight: lighter;
-  background-color: Transparent;
-  border: 2px solid #fff; 
-}
-
-.paral button:hover{
-  color: #e6ae75; 
-  background: transparent;
-  border: 2px solid #e6ae75; 
-}
-
-.paral button:focus{
-  font-size: 24px; 
-  font-weight: lighter;
-  background-color: Transparent;
-  border: none; 
-}
-
-.paral button:visited{
-  border: 0px; 
-}

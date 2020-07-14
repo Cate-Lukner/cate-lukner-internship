@@ -1,18 +1,18 @@
-/* Team Cards Styling */
+/* Team Styling */
 
-.single-content{
+.team-member{
   position: relative; 
   transition: 0.3s;
 }
 
-.single-content .text-content,
-.single-content:after{
+.team-member .text-content,
+.team-member:after{
   position: absolute; 
   left: 20px; 
   right: 20px; 
 }
 
-.single-content:after{
+.team-member:after{
   content: '';
   display: block; 
   background: black; 
@@ -22,14 +22,16 @@
   transition: all ease-in-out 0.3s;
 }
 
-.single-content:hover:after{
+.team-member:hover:after{
   opacity: 0.6;
   transition: all ease-in-out 0.3s;
 }
 
-.single-content img{
+.team-member img{
   width: 100%; 
   height: 100%; 
+  border: 5px solid #f7f3ef; 
+  border-radius: 5px;
 }
 
 .text-content{
@@ -41,7 +43,7 @@
   text-align: center;
 }
 
-.single-content:hover .text-content{
+.team-member:hover .text-content{
   opacity: 1;
   transform: translate(0,-50%);
   transition-delay: 0.2s;
