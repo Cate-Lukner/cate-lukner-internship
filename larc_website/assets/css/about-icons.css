@@ -1,0 +1,40 @@
+/* Icon Section Styling */ 
+
+section {
+  opacity: 0;
+  transition: opacity 1s;
+  transform: translate(0, 20px);
+  transition: all 2s;
+}
+  
+section.visible { 
+  opacity: 1;
+  transform: (0,0);
+  color: #233142; 
+}
+
+.icon-header h1{
+  padding: 10px;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 200;
+}
+
+/* This causes the icons to be not centered when they are in a single column*/
+/* There is most likely a better solution for evenly spaced columns*/ 
+
+.col-lg-2 {
+  background-color: white;
+  margin-left: 2.75%; 
+  margin-bottom: 3%;
+  padding: 30px; 
+  border-radius: 25px;
+}
+
+.col-lg-2 h5{
+  margin-top: 1%;
+  color: #333947; 
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 30px;
+}

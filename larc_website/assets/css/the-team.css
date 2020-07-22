@@ -1,0 +1,51 @@
+/* Team Styling */
+
+.team-member{
+  position: relative; 
+  transition: 0.3s;
+}
+
+.team-member .text-content,
+.team-member:after{
+  position: absolute; 
+  left: 20px; 
+  right: 20px; 
+}
+
+.team-member:after{
+  content: '';
+  display: block; 
+  background: black; 
+  top: 20px; 
+  bottom: 20px; 
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+}
+
+.team-member:hover:after{
+  opacity: 0.6;
+  transition: all ease-in-out 0.3s;
+}
+
+.team-member img{
+  width: 100%; 
+  height: 100%; 
+  border: 5px solid #f7f3ef; 
+  border-radius: 5px;
+}
+
+.text-content{
+  top: 45%;
+  opacity: 0;
+  z-index: 1;
+  transform: translate(10%, -30%);
+  transition: 0.25s;
+  text-align: center;
+}
+
+.team-member:hover .text-content{
+  opacity: 1;
+  transform: translate(0,-50%);
+  transition-delay: 0.2s;
+  color: #fff;
+}
